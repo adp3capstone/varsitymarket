@@ -1,5 +1,8 @@
 package za.ca.cput.adp3capstone.domain.products;
 
+import za.ca.cput.adp3capstone.domain.Category;
+import za.ca.cput.adp3capstone.domain.Seller;
+
 public class Laptop extends Product {
     private String processor;
     private int ramSize;                // in GB
@@ -40,6 +43,14 @@ public class Laptop extends Product {
     }
 
     public static class Builder{
+        private long productId;
+        private Seller productSeller;
+        private String productName;
+        private Category category;
+        private String description;
+        private String imageUrl;
+        private String brand;
+        private double price;
         private String processor;
         private int ramSize;
         private int storageSize;
@@ -57,7 +68,45 @@ public class Laptop extends Product {
         private boolean hasWebcam;
         private boolean isRefurbished;
 
+        public Builder productId(long productId) {
+            this.productId = productId;
+            return this;
+        }
 
+        public Builder productSeller(Seller productSeller) {
+            this.productSeller = productSeller;
+            return this;
+        }
+
+        public Builder productName(String productName) {
+            this.productName = productName;
+            return this;
+        }
+
+        public Builder category(Category category) {
+            this.category = category;
+            return this;
+        }
+
+        public Builder description(String description) {
+            this.description = description;
+            return this;
+        }
+
+        public Builder imageUrl(String imageUrl) {
+            this.imageUrl = imageUrl;
+            return this;
+        }
+
+        public Builder brand(String brand) {
+            this.brand = brand;
+            return this;
+        }
+
+        public Builder price(double price) {
+            this.price = price;
+            return this;
+        }
 
         public Builder setProcessor(String processor) {
             this.processor = processor;
@@ -140,6 +189,14 @@ public class Laptop extends Product {
         }
 
         public Builder copy(Laptop laptopToCopy) {
+            this.productId = laptopToCopy.productId;
+            this.productSeller = laptopToCopy.productSeller;
+            this.productName = laptopToCopy.productName;
+            this.category = laptopToCopy.category;
+            this.description = laptopToCopy.description;
+            this.imageUrl = laptopToCopy.imageUrl;
+            this.brand = laptopToCopy.brand;
+            this.price = laptopToCopy.price;
             this.processor = laptopToCopy.processor;
             this.ramSize = laptopToCopy.ramSize;
             this.storageSize = laptopToCopy.storageSize;
@@ -184,6 +241,15 @@ public class Laptop extends Product {
                 ", hasHdmiPort=" + hasHdmiPort +
                 ", hasWebcam=" + hasWebcam +
                 ", isRefurbished=" + isRefurbished +
+                ", productId=" + productId +
+                ", productSeller=" + productSeller +
+                ", productName='" + productName + '\'' +
+                ", category=" + category +
+                ", description='" + description + '\'' +
+                ", imageUrl='" + imageUrl + '\'' +
+                ", brand='" + brand + '\'' +
+                ", price=" + price +
+                ", isSecondHand=" + isSecondHand +
                 '}';
     }
 }
