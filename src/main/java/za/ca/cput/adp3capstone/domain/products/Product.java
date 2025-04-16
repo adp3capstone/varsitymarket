@@ -9,15 +9,15 @@ Author: Ethan Le Roux (222622172)
 Date:3 April 2025
 */
 public abstract class Product {
-    private long productId;
-    private Seller productSeller;
-    private String productName;
-    private Category category;
-    private String description;
-    private String imageUrl;
-    private String brand;
-    private double price;
-    private boolean isSecondHand;
+    protected long productId;
+    protected Seller productSeller;
+    protected String productName;
+    protected Category category;
+    protected String description;
+    protected String imageUrl;
+    protected String brand;
+    protected double price;
+    protected boolean isSecondHand;
 
     public long getProductId() {
         return productId;
