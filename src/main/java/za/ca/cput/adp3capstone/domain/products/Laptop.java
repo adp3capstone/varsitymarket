@@ -51,6 +51,7 @@ public class Laptop extends Product {
         private String imageUrl;
         private String brand;
         private double price;
+        private boolean isSecondHand;
         private String processor;
         private int ramSize;
         private int storageSize;
@@ -105,6 +106,11 @@ public class Laptop extends Product {
 
         public Builder price(double price) {
             this.price = price;
+            return this;
+        }
+
+        public Builder setIsSecondHand(boolean isSecondHand){
+            this.isSecondHand = isSecondHand;
             return this;
         }
 
@@ -197,6 +203,7 @@ public class Laptop extends Product {
             this.imageUrl = laptopToCopy.imageUrl;
             this.brand = laptopToCopy.brand;
             this.price = laptopToCopy.price;
+            this.isSecondHand =laptopToCopy.isSecondHand;
             this.processor = laptopToCopy.processor;
             this.ramSize = laptopToCopy.ramSize;
             this.storageSize = laptopToCopy.storageSize;
