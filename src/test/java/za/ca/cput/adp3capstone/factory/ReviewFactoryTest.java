@@ -1,6 +1,6 @@
 package za.ca.cput.adp3capstone.factory;
-/* Product.java
-Review Factory class
+/* ReviewFactoryTest.java
+Review Factory Test class
 Author: Ethan Le Roux (222622172)
 Date:17 April 2025
 */
