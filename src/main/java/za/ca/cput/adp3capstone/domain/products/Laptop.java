@@ -42,6 +42,70 @@ public class Laptop extends Product {
         this.isRefurbished = builder.isRefurbished;
     }
 
+    public String getProcessor() {
+        return processor;
+    }
+
+    public int getRamSize() {
+        return ramSize;
+    }
+
+    public int getStorageSize() {
+        return storageSize;
+    }
+
+    public String getStorageType() {
+        return storageType;
+    }
+
+    public String getGraphicsCard() {
+        return graphicsCard;
+    }
+
+    public double getScreenSize() {
+        return screenSize;
+    }
+
+    public String getResolution() {
+        return resolution;
+    }
+
+    public String getOperatingSystem() {
+        return operatingSystem;
+    }
+
+    public double getBatteryLife() {
+        return batteryLife;
+    }
+
+    public double getWeight() {
+        return weight;
+    }
+
+    public boolean isTouchscreen() {
+        return isTouchscreen;
+    }
+
+    public String getKeyboardLayout() {
+        return keyboardLayout;
+    }
+
+    public int getAmountOfUsbPorts() {
+        return amountOfUsbPorts;
+    }
+
+    public boolean isHasHdmiPort() {
+        return hasHdmiPort;
+    }
+
+    public boolean isHasWebcam() {
+        return hasWebcam;
+    }
+
+    public boolean isRefurbished() {
+        return isRefurbished;
+    }
+
     public static class Builder{
         private long productId;
         private Seller productSeller;
