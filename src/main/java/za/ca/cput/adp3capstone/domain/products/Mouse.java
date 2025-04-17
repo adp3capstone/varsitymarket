@@ -83,7 +83,7 @@ public class Mouse extends Product{
             return this;
         }
 
-        public Builder setSecondHand(boolean secondHand) {
+        public Builder setIsSecondHand(boolean secondHand) {
             isSecondHand = secondHand;
             return this;
         }
