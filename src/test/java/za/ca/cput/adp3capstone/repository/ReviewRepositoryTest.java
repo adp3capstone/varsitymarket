@@ -53,15 +53,17 @@ class ReviewRepositoryTest {
     @Test
     @Order(1)
     void create() {
-        reviewRepository.create(review);
-        assertNotNull(review);
-        System.out.println(review);
+        Review createdReview = reviewRepository.create(review);
+        assertNotNull(createdReview);
+        System.out.println(createdReview);
     }
 
     @Test
     @Order(2)
     void read() {
-        Review review = reviewRepository.read(98901L);
+        Review createdReview = reviewRepository.create(review);
+
+        Review review = reviewRepository.read(createdReview.getReviewId());
         assertNotNull(review);
         System.out.println(review);
     }
