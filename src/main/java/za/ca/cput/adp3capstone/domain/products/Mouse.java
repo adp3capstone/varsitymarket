@@ -126,6 +126,19 @@ public class Mouse extends Product{
 
     @Override
     public String toString() {
-        return "";
+        return "Mouse{" +
+                "connectivityType='" + connectivityType + '\'' +
+                ", hasRGB=" + hasRGB +
+                ", dpi=" + dpi +
+                ", productId=" + productId +
+                ", productSeller=" + productSeller +
+                ", productName='" + productName + '\'' +
+                ", category=" + category +
+                ", description='" + description + '\'' +
+                ", imageUrl='" + imageUrl + '\'' +
+                ", brand='" + brand + '\'' +
+                ", price=" + price +
+                ", isSecondHand=" + isSecondHand +
+                '}';
     }
 }
