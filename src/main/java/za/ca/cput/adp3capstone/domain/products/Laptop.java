@@ -1,4 +1,9 @@
 package za.ca.cput.adp3capstone.domain.products;
+/*
+ Laptop.java
+ Author: Ethan Le Roux (222622172)
+ Date: 3 April 2025
+ */
 
 import za.ca.cput.adp3capstone.domain.Category;
 import za.ca.cput.adp3capstone.domain.Seller;
