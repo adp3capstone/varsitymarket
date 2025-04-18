@@ -41,4 +41,10 @@ public class Helper {
         }
         return false;
     }
+
+    public static boolean isBoolean(boolean a){
+        if (a)
+            return true;
+        return false;
+    }
 }
